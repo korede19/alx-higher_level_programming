@@ -1,7 +1,7 @@
 #!/usr/bin/node
-let number = 5
-if (number === 5) {
-  console.log('My number');
-} else {
+const arg = process.argv[2];
+if (isNaN(arg)) {
   console.log('Not a number');
+} else {
+  console.log('My number: ' + arg);
 }
